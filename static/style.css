@@ -38,7 +38,7 @@ section{
   left:0;
   width:100%;
   padding:2rem 9%;
-  background:var(---bg-color);
+  background:var(--bg-color);
   display:flex;
   justify-content:space-between;
   align-items:ceter;
@@ -50,12 +50,14 @@ section{
   color:var(--text-color);
   font-weight:600;
   cursor:default;
+  text-decoration:none;
 }
 .navbar a{
   font-size:1.7rem;
   color:var(--text-color);
   margin-left:4rem;
   transition:.3s;
+  text-decoration:none;
 }
 
 .navbar a:hover, 
@@ -104,7 +106,8 @@ span{
   width:4rem;
   height:4rem;
   background:transparent;
-  border:.2rem solid var(---main-color);
+  border:.2rem solid var(--main-color);
+  border-radius:50%;
   font-size:2rem;
   color:var(--main-color);
   margin:3rem 1.5rem 3rem 0;
@@ -128,8 +131,47 @@ span{
   letter-spacing:.1rem;
   font-weight:600;
   transition:.5s ease;
+  text-decoration:none;
 }
 
 .btn:hover{
   box-shadow:none;
+}
+
+.about{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:2rem;
+  background:var(--bg-color););
+}
+
+.about-img{
+  width:25vw;
+}
+
+.heading{
+  text-align:center;
+  font-size:4.5rem;
+}
+
+.about-content h2{
+  text-align:left;
+  line-height:1.2;
+}
+
+.about-content h3{
+  font-size:2.6rem;
+}
+
+.about-content p{
+  font-size:1.6rem;
+  margin: 2rem 0;
+}
+
+.skills{
+  justify-content:center;
+  align-items:center;
+  gap:2rem;
+  background:var(--bg-color););
 }
